@@ -1,0 +1,29 @@
+baseURL = 'https://onething-tracker.github.io/'
+languageCode = 'en-us'
+title = 'My New Hugo Project'
+theme = 'PaperMod'
+
+# PaperMod builds its search index and RSS from these
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+
+[params]
+  defaultTheme = 'auto'   # follows the visitor's OS light/dark setting
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+
+[params.homeInfoParams]
+  Title = 'Hello'
+  Content = 'Replace this in hugo.toml under [params.homeInfoParams].'
+
+[[menu.main]]
+  identifier = 'posts'
+  name = 'Posts'
+  url = '/posts/'
+  weight = 10
+
+[markup.highlight]
+  noClasses = false        # required for PaperMod's light/dark code themes
