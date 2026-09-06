@@ -1,6 +1,6 @@
 baseURL = 'https://onething-tracker.github.io/'
 languageCode = 'en-us'
-title = 'My New Hugo Project'
+title = 'OneThing'
 theme = 'PaperMod'
 
 # PaperMod builds its search index and RSS from these
@@ -15,15 +15,24 @@ buildFuture = false
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
 
-[params.homeInfoParams]
-  Title = 'Hello'
-  Content = 'Replace this in hugo.toml under [params.homeInfoParams].'
+[params.footer]
+  text = '''
+Make today the day you start.
+
+[Download on the App Store](https://apps.apple.com/us/app/one-thing-your-habit-coach/id6743526433) · [Get it on Google Play](https://play.google.com/store/apps/details?id=com.konami99.onething.v2)
+'''
 
 [[menu.main]]
-  identifier = 'posts'
-  name = 'Posts'
-  url = '/posts/'
+  identifier = 'blog'
+  name = 'Blog'
+  url = '/blog/'
   weight = 10
+
+[[menu.main]]
+  identifier = 'about'
+  name = 'About'
+  url = '/about/'
+  weight = 20
 
 [markup.highlight]
   noClasses = false        # required for PaperMod's light/dark code themes
