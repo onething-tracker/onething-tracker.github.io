@@ -1,0 +1,81 @@
+/* About page: hero banner, three-column feature grid, store badges.
+   The page breaks out of PaperMod's 720px --main-width so three portrait
+   screenshots still read at a useful size. */
+
+.main:has(.about-grid) {
+  max-width: 1200px;
+}
+
+.about-hero {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.about-banner {
+  width: 100%;
+  max-width: 860px;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto;
+}
+
+.about-tagline {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 28px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 32px;
+  margin: 0;
+}
+
+.about-card {
+  margin: 0;
+  padding: 24px 24px 28px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--entry);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-card img {
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 946 / 2048;
+  height: auto;
+  object-fit: contain;
+  object-position: top;
+  border-radius: 12px;
+}
+
+.about-card figcaption {
+  margin-top: auto;
+  padding-top: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.45;
+  text-align: center;
+  color: var(--primary);
+}
+
+@media (max-width: 1000px) {
+  .about-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+  .about-grid { grid-template-columns: 1fr; gap: 28px; }
+  .about-tagline { font-size: 20px; }
+
+  /* Crop each screenshot to its top so the page is roughly half as long to scroll */
+  .about-card img {
+    aspect-ratio: auto;
+    height: 440px;
+    object-fit: cover;
+    object-position: top;
+  }
+}

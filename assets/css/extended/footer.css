@@ -2,3 +2,70 @@
     margin: 0;
     line-height: 1.7;
 }
+
+.footer-tagline {
+    font-weight: 600;
+}
+
+.footer-badges {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin: 12px 0 8px;
+}
+
+.footer-badges a {
+    display: inline-flex;
+}
+
+.footer-badges .badge {
+    display: block;
+    width: auto;
+}
+
+/* Apple's badge has no clear space baked in; Google's does. Sizes are chosen so
+   the two buttons read as the same height once Google's padding is discounted. */
+.footer-badges .badge-apple {
+    height: 40px;
+    margin: 0 6px;
+}
+
+.footer-badges .badge-google {
+    height: 60px;
+}
+
+/* Apple ships separate artwork per background; show the right one per theme. */
+.footer-badges .badge-on-dark {
+    display: none;
+}
+
+[data-theme="dark"] .footer-badges .badge-on-light {
+    display: none;
+}
+
+[data-theme="dark"] .footer-badges .badge-on-dark {
+    display: block;
+}
+
+@media (prefers-color-scheme: dark) {
+    html:not([data-theme="light"]) .footer-badges .badge-on-light {
+        display: none;
+    }
+
+    html:not([data-theme="light"]) .footer-badges .badge-on-dark {
+        display: block;
+    }
+}
+
+.footer-copyright {
+    opacity: 0.75;
+}
+
+/* Keep the badges clear of the fixed scroll-to-top button on small screens */
+@media (max-width: 640px) {
+    .footer {
+        padding-bottom: 88px;
+    }
+}

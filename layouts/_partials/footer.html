@@ -2,8 +2,28 @@
 <footer class="footer">
 
     {{- with site.Params.footer.text }}
-        {{ . | markdownify }}
+        <p class="footer-tagline">{{ . | markdownify }}</p>
     {{- end }}
+
+    {{- with site.Params.store }}
+    <div class="footer-badges">
+        {{- with .appStore }}
+        <a href="{{ . }}" rel="noopener" aria-label="Download One Thing on the App Store">
+            {{- /* Apple ships a black badge for light backgrounds and a white one for dark */}}
+            <img class="badge badge-apple badge-on-light" src="{{ "images/badges/app-store-black.png" | relURL }}" alt="" width="120" height="40" loading="lazy">
+            <img class="badge badge-apple badge-on-dark" src="{{ "images/badges/app-store-white.png" | relURL }}" alt="" width="120" height="40" loading="lazy">
+        </a>
+        {{- end }}
+        {{- with .googlePlay }}
+        <a href="{{ . }}" rel="noopener" aria-label="Get One Thing on Google Play">
+            {{- /* Google's badge carries its own outline, so one asset covers both themes */}}
+            <img class="badge badge-google" src="{{ "images/badges/google-play.png" | relURL }}" alt="" width="155" height="60" loading="lazy">
+        </a>
+        {{- end }}
+    </div>
+    {{- end }}
+
+    <p class="footer-copyright">One Thing {{ now.Format "2006" }}</p>
 
 </footer>
 {{- end }}

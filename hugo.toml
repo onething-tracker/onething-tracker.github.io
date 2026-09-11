@@ -16,11 +16,12 @@ buildFuture = false
   ShowCodeCopyButtons = true
 
 [params.footer]
-  text = '''
-Make today the day you start.
+  text = 'Make today the day you start.'
 
-[Download on the App Store](https://apps.apple.com/us/app/one-thing-your-habit-coach/id6743526433) · [Get it on Google Play](https://play.google.com/store/apps/details?id=com.konami99.onething.v2)
-'''
+# Store links: used by the footer badges and the About page
+[params.store]
+  appStore = 'https://apps.apple.com/us/app/one-thing-your-habit-coach/id6743526433'
+  googlePlay = 'https://play.google.com/store/apps/details?id=com.konami99.onething.v2'
 
 [[menu.main]]
   identifier = 'blog'
@@ -33,6 +34,9 @@ Make today the day you start.
   name = 'About'
   url = '/about/'
   weight = 20
+
+[markup.goldmark.renderer]
+  unsafe = true           # the About page uses raw HTML for its feature grid
 
 [markup.highlight]
   noClasses = false        # required for PaperMod's light/dark code themes
