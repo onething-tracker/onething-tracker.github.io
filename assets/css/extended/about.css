@@ -11,12 +11,14 @@
   margin-bottom: 56px;
 }
 
-.about-banner {
+/* Scoped past the theme's own `.post-content img` margins, which would
+   otherwise pin the banner to the left edge. */
+.about-hero img.about-banner {
   width: 100%;
   max-width: 860px;
   border-radius: 12px;
   display: block;
-  margin: 0 auto;
+  margin-inline: auto;
 }
 
 .about-tagline {
