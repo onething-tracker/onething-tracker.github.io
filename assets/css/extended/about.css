@@ -11,14 +11,13 @@
   margin-bottom: 56px;
 }
 
-/* Capped at 1024px and centred. The artwork is 2048px wide, so it is
-   downscaled here and stays sharp on high-DPI screens. */
+/* Spans the content column so its edges line up with the title, tagline and
+   cards. The artwork is 2048px wide, so it is still downscaled at every
+   viewport and stays sharp on high-DPI screens. */
 .about-hero img.about-banner {
   width: 100%;
-  max-width: 1024px;
   border-radius: 12px;
   display: block;
-  margin-inline: auto;
 }
 
 .about-tagline {
