@@ -2,7 +2,7 @@
 title: "OneThing MCP"
 date: 2026-08-01
 slug: "onething-mcp"
-draft: true
+draft: false
 summary: "The OneThing MCP Server is available — connect your habits to any MCP-compatible AI tool."
 ---
 

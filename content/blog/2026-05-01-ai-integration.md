@@ -2,7 +2,7 @@
 title: "AI Integration"
 date: 2026-05-01
 slug: "ai-integration"
-draft: true
+draft: false
 summary: "Connecting OneThing to AI clients like Claude or ChatGPT, and the MCP that will make it possible."
 ---
 

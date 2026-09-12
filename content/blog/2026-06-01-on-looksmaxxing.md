@@ -2,7 +2,7 @@
 title: "On Looksmaxxing"
 date: 2026-06-01
 slug: "on-looksmaxxing"
-draft: true
+draft: false
 summary: "Watch the looksmaxxing videos for entertainment if you like, but consistency at the gym beats chasing a jawline."
 ---
 

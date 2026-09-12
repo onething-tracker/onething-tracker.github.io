@@ -2,7 +2,7 @@
 title: "Introducing Kona"
 date: 2026-04-01
 slug: "introducing-kona"
-draft: true
+draft: false
 summary: "Meet Kona, your personal habit coach — and what we're planning to teach it next."
 ---
 

@@ -2,7 +2,7 @@
 title: "We've Outsourced Everything But Accountability"
 date: 2026-03-01
 slug: "weve-outsourced-everything-but-accountability"
-draft: true
+draft: false
 summary: "You can automate almost anything now. Logging what you actually did is still yours."
 ---
 
