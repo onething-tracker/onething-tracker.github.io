@@ -1,0 +1,83 @@
+{{- /* Overrides Hugo's internal google_analytics.html.
+
+   Nothing is loaded and no cookie is set until the visitor accepts. PaperMod
+   only calls this partial from production builds, so `hugo server` neither
+   tracks nor shows the banner. */ -}}
+{{- with site.Config.Services.GoogleAnalytics.ID }}
+<script>
+(function () {
+  var ID = {{ . }};
+  var KEY = 'cookie-consent';
+
+  function loadAnalytics() {
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + ID;
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { window.dataLayer.push(arguments); }
+    window.gtag = gtag;
+    gtag('js', new Date());
+    gtag('config', ID);
+  }
+
+  function remember(value) {
+    try { localStorage.setItem(KEY, value); } catch (e) { /* private mode */ }
+  }
+
+  function recall() {
+    try { return localStorage.getItem(KEY); } catch (e) { return null; }
+  }
+
+  function dismiss(banner, previous) {
+    banner.remove();
+    if (previous && previous.focus) previous.focus();
+  }
+
+  function showBanner() {
+    var previous = document.activeElement;
+    var banner = document.createElement('div');
+    banner.className = 'consent';
+    banner.setAttribute('role', 'dialog');
+    banner.setAttribute('aria-modal', 'false');
+    banner.setAttribute('aria-label', 'Cookie choices');
+    banner.innerHTML =
+      '<p class="consent-text">We’d like to count visits to see which posts get read. ' +
+      'That uses cookies and sends data to Google Analytics. Only if you say yes.</p>' +
+      '<div class="consent-actions">' +
+      '<button type="button" class="consent-btn" data-consent="declined">No thanks</button>' +
+      '<button type="button" class="consent-btn" data-consent="granted">Allow</button>' +
+      '</div>';
+
+    banner.addEventListener('click', function (e) {
+      var choice = e.target.getAttribute && e.target.getAttribute('data-consent');
+      if (!choice) return;
+      remember(choice);
+      if (choice === 'granted') loadAnalytics();
+      dismiss(banner, previous);
+    });
+
+    banner.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') { remember('declined'); dismiss(banner, previous); }
+    });
+
+    document.body.appendChild(banner);
+    var first = banner.querySelector('.consent-btn');
+    if (first) first.focus();
+  }
+
+  var choice = recall();
+  if (choice === 'granted') { loadAnalytics(); return; }
+  if (choice === 'declined') return;
+
+  // No decision yet. Treat Do Not Track as a decision already made.
+  if (navigator.doNotTrack === '1' || window.doNotTrack === '1') { return; }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', showBanner);
+  } else {
+    showBanner();
+  }
+})();
+</script>
+{{- end }}

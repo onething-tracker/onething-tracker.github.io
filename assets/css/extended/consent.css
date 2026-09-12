@@ -1,0 +1,70 @@
+/* Cookie consent banner. Injected by layouts/_partials/google_analytics.html
+   only when analytics is configured, and only in production builds. */
+
+.consent {
+  position: fixed;
+  inset-inline: 16px;
+  bottom: 16px;
+  z-index: 100;
+  max-width: 520px;
+  margin-inline: auto;
+  padding: 16px 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 16px;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--entry);
+  color: var(--primary);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgb(0 0 0 / 18%);
+}
+
+.consent-text {
+  margin: 0;
+  flex: 1 1 240px;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.consent-actions {
+  display: flex;
+  gap: 10px;
+  flex: 0 0 auto;
+}
+
+/* Both choices share one style: refusing must be no harder than accepting. */
+.consent-btn {
+  font: inherit;
+  font-size: 14px;
+  padding: 8px 16px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--theme);
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.consent-btn:hover {
+  border-color: var(--secondary);
+}
+
+.consent-btn:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+@media (max-width: 480px) {
+  .consent {
+    gap: 12px;
+  }
+
+  .consent-actions {
+    width: 100%;
+  }
+
+  .consent-btn {
+    flex: 1;
+  }
+}
