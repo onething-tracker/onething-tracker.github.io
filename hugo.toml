@@ -3,6 +3,10 @@ languageCode = 'en-us'
 title = 'OneThing'
 theme = 'PaperMod'
 
+# Emitted by PaperMod only in production builds, so `hugo server` stays out
+# of the reporting.
+googleAnalytics = 'G-5GSZF3B982'
+
 # PaperMod builds its search index and RSS from these
 enableRobotsTXT = true
 buildDrafts = false
