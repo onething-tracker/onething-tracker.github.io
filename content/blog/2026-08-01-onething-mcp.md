@@ -6,7 +6,7 @@ draft: false
 summary: "The OneThing MCP Server is available — connect your habits to any MCP-compatible AI tool."
 ---
 
-<!-- IMAGE: a banner image appeared here on the Google Sites version -->
+{{< figure src="/images/blog/onething-mcp/mcp-ready.png" alt="The OneThing mark with the words MCP Ready" >}}
 
 We're excited to announce the availability of the OneThing MCP Server.
 

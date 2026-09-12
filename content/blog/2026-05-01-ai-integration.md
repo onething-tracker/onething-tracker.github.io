@@ -6,7 +6,7 @@ draft: false
 summary: "Connecting OneThing to AI clients like Claude or ChatGPT, and the MCP that will make it possible."
 ---
 
-<!-- IMAGE: a banner image appeared here on the Google Sites version -->
+{{< figure src="/images/blog/ai-integration/ai-clients-diagram.jpg" alt="Garmin, Strava and web search feeding an AI client, which connects to OneThing" >}}
 
 By connecting OneThing to AI clients such as Claude or ChatGPT, we're hoping to inspire more creative ways of habit building. For example,
 

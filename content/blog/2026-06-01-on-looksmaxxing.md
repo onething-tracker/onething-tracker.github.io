@@ -6,7 +6,7 @@ draft: false
 summary: "Watch the looksmaxxing videos for entertainment if you like, but consistency at the gym beats chasing a jawline."
 ---
 
-<!-- IMAGE: a banner image appeared here on the Google Sites version -->
+{{< figure src="/images/blog/on-looksmaxxing/running-shoes.jpg" alt="A pair of running shoes on concrete" >}}
 
 ABC's article on looksmaxxing is an eye-opener for us.
 
@@ -19,5 +19,3 @@ We think it's ok to watch those videos for entertainment, but don't take them to
 Going to the gym, cycling, and running are all effective ways to become fitter. They may sound boring, but doing them consistently is hard.
 
 Focus on these and let go of the hammer.
-
-<!-- IMAGE: two further images appeared here on the Google Sites version -->

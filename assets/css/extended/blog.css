@@ -29,3 +29,9 @@
 .post-content figure figcaption p {
   margin: 0;
 }
+
+/* Full-height phone screenshots. At the width used for the wide crops these
+   would run over a thousand pixels tall, so they are capped much narrower. */
+.post-content figure.portrait img {
+  max-width: 280px;
+}

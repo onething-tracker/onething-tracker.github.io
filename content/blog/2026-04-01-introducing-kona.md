@@ -6,7 +6,7 @@ draft: false
 summary: "Meet Kona, your personal habit coach — and what we're planning to teach it next."
 ---
 
-<!-- IMAGE: a banner image appeared here on the Google Sites version -->
+{{< figure class="portrait" src="/images/blog/introducing-kona/kona-chat.png" alt="Kona suggesting five morning habits in a chat screen" >}}
 
 Meet Kona, your personal habit coach.
 
