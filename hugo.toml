@@ -1,4 +1,4 @@
-baseURL = 'https://www.onethingtracker.app/'
+baseURL = 'https://onethingtracker.app/'
 languageCode = 'en-us'
 title = 'OneThing'
 theme = 'PaperMod'

@@ -3,7 +3,7 @@
 Source for the OneThing Tracker site, built with [Hugo](https://gohugo.io/) and the
 [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme.
 
-Live at <https://www.onethingtracker.app>.
+Live at <https://onethingtracker.app>.
 
 ## Setup
 
