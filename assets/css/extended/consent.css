@@ -16,7 +16,7 @@
   justify-content: space-between;
   background: var(--entry);
   color: var(--primary);
-  border: 1px solid var(--border);
+  border: 2px solid #97d077; /* the app icon's green, so the banner reads as ours */
   border-radius: 12px;
   box-shadow: 0 6px 24px rgb(0 0 0 / 18%);
 }
