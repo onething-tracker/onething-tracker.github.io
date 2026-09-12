@@ -1,0 +1,13 @@
+---
+title: "OneThing MCP"
+date: 2026-01-01 # TODO: set the real publication date
+slug: "onething-mcp"
+draft: true
+summary: "The OneThing MCP Server is available — connect your habits to any MCP-compatible AI tool."
+---
+
+<!-- IMAGE: a banner image appeared here on the Google Sites version -->
+
+We're excited to announce the availability of the OneThing MCP Server.
+
+Connect your OneThing habits to any MCP-compatible AI tool through the Model Context Protocol. Let your AI assistant create the plan, while OneThing keeps you motivated to follow through.
