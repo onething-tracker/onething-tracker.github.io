@@ -6,6 +6,9 @@ draft: false
 summary: "A new summary of your activity, generated at the start of every month."
 ---
 
+Look back on your habits and achievements from the past month. Turn it on in
+Settings, and a new summary arrives at the beginning of every month.
+
 {{< figure src="/images/blog/ai-activity-summary/enable-activity-summary.png" alt="Settings screen with the Activity Summary toggle switched on" caption="Enable Activity Summary" >}}
 
 {{< figure src="/images/blog/ai-activity-summary/monthly-summary.png" alt="A generated summary for December 2025" caption="See a new summary generated at the beginning of every month" >}}

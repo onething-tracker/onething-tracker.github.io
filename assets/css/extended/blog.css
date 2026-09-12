@@ -1,0 +1,31 @@
+/* Blog post screenshots.
+
+   The migrated screenshots are wide crops of phone UI, exported at ~1150px.
+   Shown at the full content width they render the app's own text larger than
+   the post's headline, so they are capped well below the column width and
+   centred. The border keeps a white app screen from bleeding into the page. */
+.post-content figure {
+  margin: 2.2rem auto;
+  text-align: center;
+}
+
+.post-content figure img {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  display: block;
+  margin-inline: auto;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.post-content figure figcaption {
+  margin-top: 0.6rem;
+  font-size: 0.85rem;
+  color: var(--secondary);
+  text-align: center;
+}
+
+.post-content figure figcaption p {
+  margin: 0;
+}
