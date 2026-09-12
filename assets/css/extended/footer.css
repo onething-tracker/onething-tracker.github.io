@@ -59,10 +59,6 @@
     }
 }
 
-.footer-copyright {
-    opacity: 0.75;
-}
-
 /* Keep the badges clear of the fixed scroll-to-top button on small screens */
 @media (max-width: 640px) {
     .footer {
