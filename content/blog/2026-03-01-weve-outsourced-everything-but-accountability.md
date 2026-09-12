@@ -12,6 +12,6 @@ We've delegated so much to AI, we might as well ask it to do our exercise too.
 
 But some things still need to be yours.
 
-No matter how much you automate, log your activities on One Thing. That part's on you.
+No matter how much you automate, log your activities on OneThing. That part's on you.
 
 {{< figure class="portrait" src="/images/blog/outsourced-accountability/push-ups-habit.png" alt="A push ups habit in OneThing showing a three day streak" >}}

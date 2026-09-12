@@ -11,8 +11,8 @@
   margin-bottom: 56px;
 }
 
-/* Held at its native 1024px so it is never upscaled, and centred in the
-   wider column. */
+/* Capped at 1024px and centred. The artwork is 2048px wide, so it is
+   downscaled here and stays sharp on high-DPI screens. */
 .about-hero img.about-banner {
   width: 100%;
   max-width: 1024px;

@@ -1,7 +1,7 @@
 ---
-title: "About One Thing"
+title: "About OneThing"
 url: "/about/"
-summary: "One Thing is a beautiful habit tracker."
+summary: "OneThing is a beautiful habit tracker."
 ShowReadingTime: false
 ShowBreadCrumbs: false
 ShowPostNavLinks: false
@@ -10,13 +10,13 @@ hideMeta: true
 ---
 
 <section class="about-hero">
-  <img src="/images/about/banner.png" alt="One Thing — Master the Power of One Habit at a Time" class="about-banner">
-  <p class="about-tagline">One Thing is a beautiful habit tracker.</p>
+  <img src="/images/about/banner.jpg" alt="A runner on a waterfront path at sunrise, city skyline across the water" class="about-banner">
+  <p class="about-tagline">OneThing is a beautiful habit tracker.</p>
 </section>
 
 <section class="about-grid">
   <figure class="about-card">
-    <img src="/images/about/welcome.png" alt="One Thing welcome screen" loading="lazy">
+    <img src="/images/about/welcome.png" alt="OneThing welcome screen" loading="lazy">
     <figcaption>Master the power of one habit at a time</figcaption>
   </figure>
   <figure class="about-card">
