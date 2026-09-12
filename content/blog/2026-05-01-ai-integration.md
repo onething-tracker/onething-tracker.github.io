@@ -1,6 +1,6 @@
 ---
 title: "AI Integration"
-date: 2026-01-01 # TODO: set the real publication date
+date: 2026-05-01
 slug: "ai-integration"
 draft: true
 summary: "Connecting OneThing to AI clients like Claude or ChatGPT, and the MCP that will make it possible."

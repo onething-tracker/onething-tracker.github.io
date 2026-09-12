@@ -1,6 +1,6 @@
 ---
 title: "On Looksmaxxing"
-date: 2026-01-01 # TODO: set the real publication date
+date: 2026-06-01
 slug: "on-looksmaxxing"
 draft: true
 summary: "Watch the looksmaxxing videos for entertainment if you like, but consistency at the gym beats chasing a jawline."

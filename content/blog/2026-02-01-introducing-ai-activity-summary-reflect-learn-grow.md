@@ -1,6 +1,6 @@
 ---
 title: "Introducing AI Activity Summary: Reflect, Learn, Grow"
-date: 2026-01-01 # TODO: set the real publication date
+date: 2026-02-01
 slug: "introducing-ai-activity-summary-reflect-learn-grow"
 draft: true
 summary: "A new summary of your activity, generated at the start of every month."

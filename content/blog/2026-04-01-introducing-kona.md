@@ -1,6 +1,6 @@
 ---
 title: "Introducing Kona"
-date: 2026-01-01 # TODO: set the real publication date
+date: 2026-04-01
 slug: "introducing-kona"
 draft: true
 summary: "Meet Kona, your personal habit coach — and what we're planning to teach it next."

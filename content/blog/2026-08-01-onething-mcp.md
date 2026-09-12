@@ -1,6 +1,6 @@
 ---
 title: "OneThing MCP"
-date: 2026-01-01 # TODO: set the real publication date
+date: 2026-08-01
 slug: "onething-mcp"
 draft: true
 summary: "The OneThing MCP Server is available — connect your habits to any MCP-compatible AI tool."
